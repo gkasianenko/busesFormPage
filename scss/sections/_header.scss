@@ -12,6 +12,28 @@
 .header__contacts-desktop{
     display: flex;
     align-items: center;
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.header__contacts-mobile{
+    display: none;
+    align-items: center;
+
+    & a{
+        flex-shrink: 0;
+    }
+
+    @media (max-width: $mobile) {
+        display: flex;
+    }
+    
+}
+
+.header__contacts-mobile > * + * {
+    margin-left: 10px;
 }
 
 .header__contacts-desktop > * + * {
@@ -21,6 +43,14 @@
 .header__logo{
     display: flex;
     align-items: center;
+
+    & p{
+        overflow-wrap: anywhere;
+    }
+
+    @media (max-width: $mobile-xs) {
+       font-size: 11px; 
+    }
 }
 
 .header__logo > * + * {
