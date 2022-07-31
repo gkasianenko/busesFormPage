@@ -1,0 +1,52 @@
+.header{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header__nav{
+    padding: 12px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__contacts-desktop{
+    display: flex;
+    align-items: center;
+}
+
+.header__contacts-desktop > * + * {
+    margin-left: 40px;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+
+.header__logo > * + * {
+    margin-left: 10px;
+}
+
+.header__mail > * + * {
+    margin-top: 5px;
+}
+
+.mail-link, .phone-link{
+    display: flex;
+    align-items: center;
+
+}
+
+.phone-link{
+    font-weight: 700;
+font-size: 24px;
+line-height: 1.1;
+}
+
+.mail-link > * + * {
+    margin-left: 10px;
+}
+
+.phone-link > * + * {
+    margin-left: 10px;
+}
