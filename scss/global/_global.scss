@@ -1,13 +1,15 @@
 //Шрифт
 @font-face {
-    font-family: "generalFont";
-    src: url("/fonts/Gilroy-Regular.ttf") format("ttf"),
+    font-family: "Gilroy";
+    src: url("../../fonts/Gilroy/Gilroy-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
          
   }
 
   @font-face {
-    font-family: "headersFont";
-    src: url("/fonts/Gilroy-Bold.ttf") format("ttf"),
+    font-family: "GilroyHeaders";
+    src: url("../../fonts/Gilroy/Gilroy-Boold.woff") format("woff");
          
   }
 
@@ -30,7 +32,7 @@ body {
 	display: flex; /* sticky footer */
 	flex-direction: column; /* sticky footer */
 	margin: 0;
-	font-family: generalFont, sans-serif;
+	font-family: "Gilroy", sans-serif;
     font-size: 14px;
 	color: #fff;
 
@@ -38,6 +40,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+
+    min-height: calc(100vh - 60px);
 }
 
 body > * {
@@ -56,6 +61,15 @@ label {
 a{
     text-decoration: none;
     color: #fff;
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+input{
+    outline: none;
 }
 
 h1,
