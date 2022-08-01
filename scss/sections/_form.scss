@@ -235,3 +235,45 @@ transition: all 0.3s ease-in-out;
 
     color: #B0B0B0;
 }
+
+.success-message {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 80%;
+  
+    font-size: 16px;
+    text-align: center;
+    background-color: yellowgreen;
+    border-radius: 10px;
+  
+    animation: status 4s ease forwards;
+  
+    &:hover {
+      background-color: yellowgreen;
+    }
+  }
+
+  .success-message.visuallyhidden {
+    display: none;
+  }
+  
+  @keyframes status {
+    0% {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+        visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      display:none;
+    }
+  }
+  

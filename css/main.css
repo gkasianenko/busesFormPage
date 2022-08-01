@@ -33,7 +33,7 @@ body {
   font-family: "Gilroy", sans-serif;
   font-size: 14px;
   color: #fff;
-  background-image: url("../img/body-bg.jpg");
+  background-image: url("../../img/body-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -381,5 +381,51 @@ legend {
   margin-top: 15px;
   text-align: center;
   color: #B0B0B0; }
+
+.success-message {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+  text-align: center;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards; }
+  .success-message:hover {
+    background-color: yellowgreen; }
+
+.success-message.visuallyhidden {
+  display: none; }
+
+@-webkit-keyframes status {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all; }
+  90% {
+    opacity: 1;
+    pointer-events: all; }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    display: none; } }
+
+@keyframes status {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all; }
+  90% {
+    opacity: 1;
+    pointer-events: all; }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
