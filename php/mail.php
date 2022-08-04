@@ -7,8 +7,8 @@ $c = true;
 
 // Save Basic Form parametrs
 $project_name = 'Высококачественные пассажирские перевозки';
-$admin_email  = "g.kasianenko@yandex.ru";
-$email_from  = "info@perevozki.ru";
+$admin_email  = "info@corp-bus.ru";
+$email_from  = "info@corp-bus.ru";
 // $form_subject = trim($_POST["form_subject"]);
 
 // Serialize form fields - that filled-in by User
@@ -42,7 +42,7 @@ function adopt($text) {
 	return '=?UTF-8?B?'.base64_encode($text).'?=';
 }
 
-$form_subject = 'Соединение - страница фонда';
+$form_subject = 'Заявка на перевозку';
 
 // Preparing header
 $headers = "MIME-Version: 1.0" . PHP_EOL .
@@ -58,9 +58,9 @@ send_user_data_in_txt_file ($message);
 
 // header('location: ../thankyou.php');
 
-echo "<div class="success-message">
+echo "<div class='success-message'>
 		<p>Спасибо! Мы скоро свяжемся<br>с Вами</p>
-		</div>;"
+		</div>"
 
 ?>
 
